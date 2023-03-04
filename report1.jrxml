@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6e38d05b-0a90-459f-a00f-ab7410bd2e51">
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     product.`ProdName` AS product_ProdName,
+     product.`ProdManDate` AS product_ProdManDate,
+     product.`ProdExpDate` AS product_ProdExpDate,
+     product.`ProdPrice` AS product_ProdPrice,
+     product.`Quantity` AS product_Quantity
+FROM
+     `product` product]]>
+	</queryString>
+	<field name="product_ProdName" class="java.lang.String"/>
+	<field name="product_ProdManDate" class="java.sql.Timestamp"/>
+	<field name="product_ProdExpDate" class="java.sql.Timestamp"/>
+	<field name="product_ProdPrice" class="java.lang.Double"/>
+	<field name="product_Quantity" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
